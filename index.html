@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily News</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- navbar start -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <h4><span style="color: blue">News</span> 24</h4>
+          <div>
+            <a class="anchor1" href="">News</a>
+            <a class="anchor1" href="qsn-ans.html">Blog</a>
+          </div>
+        </div>
+      </nav>
+      <hr />
+      <!-- navbar ends -->
+
+      <!-- category start -->
+      <div>
+        <ul id="categoryParent" class="d-flex justify-content-around">
+          <li class="customList">
+            <button onclick="fetchNews(8)" id="homeButton" class="customButton">
+              Home
+            </button>
+          </li>
+        </ul>
+      </div>
+      <!-- category ends -->
+    </header>
+
+    <main>
+      <!-- category shower start  -->
+      <section>
+        <div class="category-shower">
+          <p class="shower-text">
+            <span id="categoryNumber">0</span> items found for category
+            <span id="categoryName">none</span>
+          </p>
+        </div>
+        <br />
+        <div class="d-flex justify-content-between">
+          <div>
+            <p>Sort By View:</p>
+          </div>
+          <div>
+            <button class="rounded bg-primary text-light">Today’s Pick</button>
+            <button class="rounded bg-light">Trending</button>
+          </div>
+        </div>
+        <br />
+      </section>
+      <!-- category shower ends -->
+
+      <!-- card started  -->
+      <!-- card-start -->
+      <section id="cardParent"></section>
+      <!-- card ends  -->
+
+      <!-- spinner start -->
+      <section id="loader" class="d-none">
+        <div
+          style="height: 400px"
+          class="d-flex justify-content-center align-items-center"
+        >
+          <div class="spinner-border text-success" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+        <!-- spinner ends -->
+      </section>
+    </main>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/main.js"></script>
+  </body>
+  <footer class="footer">
+    <p>Copyright 2021 News Portal</p>
+  </footer>
+</html>

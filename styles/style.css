@@ -1,0 +1,49 @@
+body {
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.category-shower {
+  background-color: lightgray;
+  width: 100%;
+  height: 60px;
+  border-radius: 8px;
+}
+.shower-text {
+  padding-left: 20px;
+  padding-top: 15px;
+}
+
+.anchor1 {
+  text-decoration: none;
+  padding-right: 30px;
+}
+.customList {
+  list-style: none;
+}
+
+.customButton {
+  border: none;
+  background-color: white;
+}
+
+.writter {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.writter-img {
+  width: 56px;
+  height: 56px;
+}
+
+.anchor {
+  text-decoration: none;
+}
+
+.footer {
+  text-align: center;
+  padding-top: 30px;
+  background-color: gray;
+  height: 100px;
+}
